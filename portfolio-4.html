@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escrow Payment System</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Reno Adrian" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Reno Adrian">Reno Adrian</h1>
+          <p class="title">Software Engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:renos.adrian@gmail.com" class="contact-link">renos.adrian@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+6285157979356" class="contact-link">+62 8515-7979-356</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Bekasi, Indonesia</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/reno-satya-adrian/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/renosatyaadrian" class="social-link"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <article class="portfolio-detail active">
+
+        <header class="detail-header">
+          
+          <a href="index.html#projects" data-action="projects" class="back-btn-small">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <span>Back to Projects</span>
+          </a>
+
+          <div class="detail-top-actions">
+            <a href="#" target="_blank" class="detail-action-icon" title="Closed Repository">
+                <ion-icon name="lock-closed-outline" title="Closed Repository"></ion-icon>
+            </a>
+        </div>
+          
+          <div class="blog-tags inline-tags" id="project-tech-tags">
+              <span class="blog-tag-item">Java Springboot</span>
+              <span class="blog-tag-item">Microservices</span>
+              <span class="blog-tag-item">MongoDB</span>
+            <span class="blog-tag-item">Kafka</span>
+              <span class="blog-tag-item">Rest API</span>
+            </div>
+
+          <h1 class="h1 article-title detail-title">Escrow Payment System</h1>
+          
+        </header>
+
+        <figure class="detail-banner-box">
+          
+          <img src="./assets/images/project 4.png" alt="Event Driven Microservices Architecture" loading="lazy">
+        </figure>
+
+        <div class="detail-content">
+
+          <p style="text-align: justify;">
+            Designed and developed the backend services for Paykita, a high-availability mobile and web-based escrow payment system engineered to ensure secure and trustworthy transactions between customers and businesses. Focus was placed on building robust internal monitoring and reconciliation reports, alongside a detailed transaction history engine (utilizing MongoDB). A critical contribution involved engineering seamless and highly secure integration services with various Indonesian banks and 3rd party Payment Gateways, utilizing a Java Springboot Microservices architecture underpinned by Kafka for resilient, event-driven communication.
+
+
+
+          <h2 class="h3 content-heading">Core Challenges & Goals</h2>
+
+          <ul class="detail-list">
+            <li>
+              <strong>• Data Visibility:</strong>
+                <li>Provide APIs for near real-time data display using Kafka
+            </li>
+            <li>
+              <strong>• Security & Availability:</strong>
+                <li>Ensure Payment Gateway integration with banks runs securely and is highly available.
+            </li>
+            <li>
+              <strong>• Scalability & Integrity:</strong>
+                <li>Maintain service integrity across distributed transaction flows.
+          </ul>
+
+          <h2 class="h3 content-heading">Architecture Overview</h2>
+          
+
+          <ul class="detail-list">
+            <li>
+              <strong>Core Architecture:</strong> 
+              <ul>
+                Event-Driven Microservices utilizing Java Springboot. The system is composed of small, decoupled services communicating asynchronously.
+              </ul>
+          <li>
+              <strong>Ingestion & Messaging:</strong> 
+              <ul>
+                Kafka acts as the high-throughput message broker, handling all transactional events for secure, asynchronous communication between services.
+              </ul>
+          <li>
+            <strong>Command/Data Store:</strong> 
+            <ul>
+                MongoDB is utilized as the primary transactional data store, offering high flexibility and horizontal scalability for handling high-volume payment transactions.
+            </ul>
+
+            <li>
+                <strong>API Communication:</strong> 
+                <ul>
+                    REST APIs are used for synchronous external communication (mobile/web requests) and for secure interaction with 3rd party bank integration services.
+                </ul>
+
+            <li>
+                <strong>Query/Reporting:</strong> 
+                <ul>
+                    Dedicated Microservices and MongoDB collections are used to generate and serve internal monitoring and reporting data, optimized for fast retrieval.
+                </ul>
+          </ul>
+
+          
+        </div>
+
+        <div class="detail-footer">
+          <a href="index.html#about" data-action="about" class="back-btn-small">
+            <ion-icon name="home-outline"></ion-icon>
+            <span>Back to Home</span>
+          </a>
+        </div>
+
+      </article>
+
+    </div>
+
+  </main>
+  
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

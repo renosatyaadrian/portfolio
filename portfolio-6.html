@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Counting and Classification at Crossroads Using YOLOv3</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Reno Adrian" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Reno Adrian">Reno Adrian</h1>
+          <p class="title">Software Engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:renos.adrian@gmail.com" class="contact-link">renos.adrian@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+6285157979356" class="contact-link">+62 8515-7979-356</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Bekasi, Indonesia</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/reno-satya-adrian/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/renosatyaadrian" class="social-link"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <article class="portfolio-detail active">
+
+        <header class="detail-header">
+          
+          <a href="index.html#projects" data-action="projects" class="back-btn-small">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <span>Back to Projects</span>
+          </a>
+
+          <div class="detail-top-actions">
+            <a href="https://github.com/renosatyaadrian/Counting-Vehicle-YOLOv3" target="_blank" class="detail-action-icon" title="View Source Code">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </div>
+          
+          <div class="blog-tags inline-tags" id="project-tech-tags">
+              <span class="blog-tag-item">Python</span>
+              <span class="blog-tag-item">YOLOv3</span>
+              <span class="blog-tag-item">OpenCV</span>
+            <span class="blog-tag-item">TensorFlow/PyTorch</span>
+              <span class="blog-tag-item">Deep Learning / Computer Vision</span>
+            </div>
+
+          <h1 class="h1 article-title detail-title">Vehicle Counting and Classification at Crossroads Using YOLOv3</h1>
+          
+        </header>
+
+        <figure class="detail-banner-box">
+          
+          <img src="./assets/images/project 6.png" alt="Event Driven Microservices Architecture" loading="lazy">
+        </figure>
+
+        <div class="detail-content">
+
+          <p style="text-align: justify;">
+            Executed a final-year academic research project focused on building an automated <strong>Vehicle Counting and Classification system</strong> for crossroads using <strong>Deep Learning</strong>. The system utilized the state-of-the-art <strong>YOLOv3 (You Only Look Once)</strong> model for real-time object detection, combined with custom <strong>Image Cropping techniques</strong> to optimize detection performance in complex intersection scenarios. The project involved rigorous data annotation, training the model on custom datasets, and successfully validating the system's ability to accurately count and classify various vehicle types passing through an intersection.
+
+
+
+
+
+          <h2 class="h3 content-heading">Core Challenges & Goals</h2>
+
+          <ul class="detail-list">
+            <li>
+              <strong>• Problem (Accuracy):</strong>
+                <li>Traditional methods for traffic counting were manual and inaccurate. The problem was to create an automated system that could perform object detection and counting with high precision in dynamic, real-world traffic scenarios.
+            </li>
+            <li>
+              <strong>• Goal (Model Performance):</strong>
+                <li>Train and tune the YOLOv3 model and implement image preprocessing techniques (cropping) to minimize false positives/negatives, aiming for a high detection and classification accuracy metric.
+            </li>
+            <li>
+                <strong>• Goal (Practical Output):</strong>
+                  <li>Successfully generate reliable, time-series data outputs on vehicle counts (e.g., cars, motorcycles) to support traffic flow analysis and urban planning studies.
+              </li>
+          </ul>
+
+          <h2 class="h3 content-heading">Architecture Overview</h2>
+          
+
+          <ul class="detail-list">
+            <li>
+              <strong>Input Layer:</strong> 
+              <ul>
+                Raw video streams or image sequences of a crossroad are ingested.
+              </ul>
+          <li>
+              <strong>Preprocessing Layer:</strong> 
+              <ul>
+                Image Cropping techniques are applied using OpenCV to focus the detection area and reduce computational overhead for the model.
+              </ul>
+          <li>
+            <strong>Model Core:</strong> 
+            <ul>
+                YOLOv3 (You Only Look Once) framework serves as the core deep learning model for feature extraction and bounding box generation.
+            </ul>
+
+            <li>
+                <strong>Tracking/Counting Logic:</strong> 
+                <ul>
+                    Custom Python/OpenCV scripts implement logic to track detected objects across frames and increment the count once a vehicle crosses a defined virtual line.
+                </ul>
+
+            <li>
+                <strong>Output Layer: </strong> 
+                <ul>
+                    Output data (vehicle counts, classification, and timestamps) is stored in local files (e.g., CSV/JSON) for analysis.
+                </ul>
+          </ul>
+
+          
+        </div>
+
+        <div class="detail-footer">
+          <a href="index.html#about" data-action="about" class="back-btn-small">
+            <ion-icon name="home-outline"></ion-icon>
+            <span>Back to Home</span>
+          </a>
+        </div>
+
+      </article>
+
+    </div>
+
+  </main>
+  
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

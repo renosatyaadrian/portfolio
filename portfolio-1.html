@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERP Astra Honda Motor - Project Detail</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Reno Adrian" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Reno Adrian">Reno Adrian</h1>
+          <p class="title">Software Engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:renos.adrian@gmail.com" class="contact-link">renos.adrian@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+6285157979356" class="contact-link">+62 8515-7979-356</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Bekasi, Indonesia</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/reno-satya-adrian/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/renosatyaadrian" class="social-link"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <article class="portfolio-detail active">
+
+        <header class="detail-header">
+          
+          <a href="index.html#projects" data-action="projects" class="back-btn-small">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <span>Back to Projects</span>
+          </a>
+
+          <div class="detail-top-actions">
+            <a href="#" target="_blank" class="detail-action-icon" title="Closed Repository">
+                <ion-icon name="lock-closed-outline" title="Closed Repository"></ion-icon>
+            </a>
+        </div>
+          
+          <div class="blog-tags inline-tags" id="project-tech-tags">
+              <span class="blog-tag-item">.NET 8</span>
+              <span class="blog-tag-item">Kafka</span>
+              <span class="blog-tag-item">Microservices</span>
+            <span class="blog-tag-item">SQL Server</span>
+              <span class="blog-tag-item">Redis</span>
+              <span class="blog-tag-item">GraphQL</span>
+              <span class="blog-tag-item">Azure OpenAI</span>
+            </div>
+
+          <h1 class="h1 article-title detail-title">ERP Astra Honda Motor (100K+ Users)</h1>
+          
+        </header>
+
+        <figure class="detail-banner-box">
+          
+          <img src="./assets/images/Project 1.png" alt="Event Driven Microservices Architecture" loading="lazy">
+        </figure>
+
+        <div class="detail-content">
+
+          <p style="text-align: justify;">
+            This project involves the implementation of a complex <strong>Event-Driven Microservices ERP system</strong>, engineered to support the operations of <strong>100,000+ users</strong> and <strong>500+ dealers</strong> across Sales, Service, and Finance modules for Astra Honda Motor (AHM).
+          </p>
+          <p style="text-align: justify;">
+            As the <strong>.NET Backend Developer</strong>, my contributions included developing the financial backbone, maintaining MS SQL Server integrity, optimizing queries using GraphQL/Redis, and integrating an innovative AI-powered CV recommendation engine (Azure OpenAI).
+          </p>
+
+          <h2 class="h3 content-heading">Core Challenges & Goals</h2>
+
+          <ul class="detail-list">
+            <li>
+              <strong>• Ingest Massive Volumes:</strong>
+                <li>Ensuring the system can handle massive transaction volumes from 500+ dealers without degrading the performance of the Command Side (MS SQL Server).
+            </li>
+            <li>
+              <strong>• Near Real-Time Projections:</strong>
+                <li>Maintaining up-to-date and low-latency read-optimized data served through GraphQL and RESTful APIs, supported by Kafka-based messaging.
+            </li>
+            <li>
+              <strong>• System Reliability:</strong>
+                <li>Ensuring the complex distributed Microservices system is reliably verifiable through rigorous E2E Scenarios and high code coverage standards.
+            </li>
+          </ul>
+
+          <h2 class="h3 content-heading">Architecture Overview</h2>
+          
+
+          <ul class="detail-list">
+            <li>
+              <strong>Ingestion & Command:</strong> 
+              <ul>
+                  <li>- .NET 8 Microservices act as Producers, publishing transactional Events to Kafka.</li>
+                  <li>- Canonical writes (Commands) are executed against the MS SQL Server, guaranteeing ACID properties.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Processing & Query:</strong> 
+              <ul>
+                  <li>- Independent Consumer Groups (Microservices) consume these Events, execute asynchronous business logic.</li>
+                  <li>- Updates the Query Side databases (optimized for reads).</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Event Store:</strong> 
+              <ul>
+              Apache Kafka serves as the persistent append-only log, acting as the historical source of truth for audit and event replay.
+            </li>
+          </ul>
+
+          <h2 class="h3 content-heading">Critical Performance Tuning</h2>
+
+          <ul class="detail-list" style="list-style-type: disc !important; padding-left: 20px !important;">
+            <li>
+              <strong>Kafka Stream Tuning:</strong> 
+              <ul style="list-style-type: circle !important; padding-left: 20px !important;">
+                <li>- Carefully sizing partitions to match consumer parallelism.</li>
+                <li>- Utilizing batched commits and idempotent consumers.</li>
+                <li>- Optimizing serialization formats (e.g., Avro / Protobuf).</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Database Tuning (MS SQL Server):</strong>
+              <p style="text-align: justify; margin-top: 5px; margin-bottom: 15px;">
+                Performing meticulous Query Plan Analysis and implementing efficient indexing on MS SQL Server for Command Side optimization.
+              </p>
+            </li>
+            <li>
+              <strong>Query Side Acceleration:</strong>
+              <p style="text-align: justify; margin-top: 5px; margin-bottom: 5px;">
+                Implementing Redis Caching and leveraging GraphQL as the Projection Layer to significantly reduce read load on the primary database and lower latency for user-facing APIs.
+              </p>
+            </li>
+          </ul>
+
+          
+        </div>
+
+        <div class="detail-footer">
+          <a href="index.html#about" data-action="about" class="back-btn-small">
+            <ion-icon name="home-outline"></ion-icon>
+            <span>Back to Home</span>
+          </a>
+        </div>
+
+      </article>
+
+    </div>
+
+  </main>
+  
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

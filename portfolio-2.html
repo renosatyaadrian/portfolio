@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERP Astra Honda Motor - Project Detail</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Reno Adrian" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Reno Adrian">Reno Adrian</h1>
+          <p class="title">Software Engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:renos.adrian@gmail.com" class="contact-link">renos.adrian@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+6285157979356" class="contact-link">+62 8515-7979-356</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Bekasi, Indonesia</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/reno-satya-adrian/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/renosatyaadrian" class="social-link"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <article class="portfolio-detail active">
+
+        <header class="detail-header">
+          
+          <a href="index.html#projects" data-action="projects" class="back-btn-small">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <span>Back to Projects</span>
+          </a>
+
+          <div class="detail-top-actions">
+            <a href="#" target="_blank" class="detail-action-icon" title="Closed Repository">
+                <ion-icon name="lock-closed-outline" title="Closed Repository"></ion-icon>
+            </a>
+        </div>
+          
+          <div class="blog-tags inline-tags" id="project-tech-tags">
+              <span class="blog-tag-item">.NET 6</span>
+              <span class="blog-tag-item">Monolithic</span>
+              <span class="blog-tag-item">Azure OpenAI</span>
+            <span class="blog-tag-item">SQL Server</span>
+              <span class="blog-tag-item">Rest API</span>
+            </div>
+
+          <h1 class="h1 article-title detail-title">HRIS Astra Graphia Information Technology</h1>
+          
+        </header>
+
+        <figure class="detail-banner-box">
+          
+          <img src="./assets/images/project 2.png" alt="Event Driven Microservices Architecture" loading="lazy">
+        </figure>
+
+        <div class="detail-content">
+
+          <p style="text-align: justify;">
+            Engineered the backend for the HR recruitment module using <strong>.NET Microservices</strong>, focusing on an innovative <strong>AI-powered CV recommendation engine</strong> . The system leverages <strong> Azure OpenAI'</strong> s text embedding and ranking systems to automate accurate candidate-to-job matching, significantly optimizing the talent acquisition process.
+
+          <h2 class="h3 content-heading">Core Challenges & Goals</h2>
+
+          <ul class="detail-list">
+            <li>
+              <strong>Maintain near-real-time projections for query consumers</strong>
+                <li>The primary goal is to provide near real-time, accurate ranking projections (generated by Azure OpenAI) to HR consumers via the REST API, enabling instant filtering and selection of top applicants for job listings.
+            </li>
+          </ul>
+
+          <h2 class="h3 content-heading">Architecture Overview</h2>
+          
+
+          <ul class="detail-list">
+            <li>
+              <strong>Core Architecture (Backend Monolith):</strong> 
+              <ul>
+                A single, unified application built on .NET Core 6 (ASP.NET Core). This monolith consolidates the API layer, business logic (recruitment workflow), and data access layers
+              </ul>
+          <li>
+              <strong>Business & API Layer:</strong> 
+              <ul>
+                The .NET Core 6 application exposes REST API that serve data and processing functions (including interacting with the AI engine) to the React Native frontend.
+              </ul>
+          <li>
+            <strong>AI Engine & Processing:</strong> 
+            <ul>
+                The Azure OpenAI service is integrated to power the AI-powered CV recommendation engine. The monolithic backend handles the communication to generate text embeddings and retrieve ranking results.
+
+            </ul>
+
+            <li>
+                <strong>Relational Data Store:</strong> 
+                <ul>
+                    SQL Server is used as the primary data store for all transactional and relational HR data (job postings, user security, candidate status).
+
+                </ul>
+                <li>
+                    <strong>High-Volume/Non-Relational Storage:</strong> 
+                    <ul>
+                        Azure Data Table is utilized for storing large volumes of non-critical metadata or complex log data related to candidate processing.
+                    </ul>
+                <li>
+                        <strong>Binary Storage (CVs):</strong> 
+                        <ul>
+                            Azure Data Storage (Blob Storage) is employed to securely store the raw candidate documents (PDFs, DOCX) uploaded via the React Native interface.
+
+            
+                        </ul>
+          </ul>
+
+          
+        </div>
+
+        <div class="detail-footer">
+          <a href="index.html#about" data-action="about" class="back-btn-small">
+            <ion-icon name="home-outline"></ion-icon>
+            <span>Back to Home</span>
+          </a>
+        </div>
+
+      </article>
+
+    </div>
+
+  </main>
+  
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

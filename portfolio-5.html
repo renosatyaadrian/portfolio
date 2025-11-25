@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geo Data Portal</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Reno Adrian" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Reno Adrian">Reno Adrian</h1>
+          <p class="title">Software Engineer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:renos.adrian@gmail.com" class="contact-link">renos.adrian@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+6285157979356" class="contact-link">+62 8515-7979-356</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Bekasi, Indonesia</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/reno-satya-adrian/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/renosatyaadrian" class="social-link"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+
+      <article class="portfolio-detail active">
+
+        <header class="detail-header">
+          
+          <a href="index.html#projects" data-action="projects" class="back-btn-small">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+            <span>Back to Projects</span>
+          </a>
+
+          <div class="detail-top-actions">
+            <a href="https://github.com/renosatyaadrian/GeoDataPortal" target="_blank" class="detail-action-icon" title="View Source Code">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </div>
+          
+          <div class="blog-tags inline-tags" id="project-tech-tags">
+              <span class="blog-tag-item">.Net 6</span>
+              <span class="blog-tag-item">Monolithic</span>
+              <span class="blog-tag-item">MySQL</span>
+            <span class="blog-tag-item">PostgreSQL</span>
+              <span class="blog-tag-item">Rest API</span>
+            </div>
+
+          <h1 class="h1 article-title detail-title">Geo Data Portal</h1>
+          
+        </header>
+
+        <figure class="detail-banner-box">
+          
+          <img src="./assets/images/project-5.png" alt="Event Driven Microservices Architecture" loading="lazy">
+        </figure>
+
+        <div class="detail-content">
+
+          <p style="text-align: justify;">
+            Developed a core <strong>Geo Data Portal application</strong> utilizing a .NET Blazor <strong>Monolithic architecture</strong> to facilitate the recording and historical tracking of geographical activities based on precise latitude and longitude coordinates. The system was designed to handle high-volume, time-series data related to critical geographical phenomena, such as water discharge rates and volcanic activity logs.
+
+
+
+
+          <h2 class="h3 content-heading">Core Challenges & Goals</h2>
+
+          <ul class="detail-list">
+            <li>
+              <strong>• Data Accommodation:</strong>
+                <li>The primary goal was to successfully build an application capable of recording, storing, and visualizing precise latitude/longitude data and the complete historical timeline for critical geographic activities (e.g., water flow rates and volcanic activity logs).
+            </li>
+            <li>
+              <strong>• Full-Stack Delivery:</strong>
+                <li>Successfully implement the full application logic—from the Blazor frontend to the REST API and multi-database connectivity—on the .NET 6 Monolithic platform.
+            </li>
+          </ul>
+
+          <h2 class="h3 content-heading">Architecture Overview</h2>
+          
+
+          <ul class="detail-list">
+            <li>
+              <strong>Core Architecture:</strong> 
+              <ul>
+                Monolithic Application built on .NET 6 (ASP.NET Core). All application layers are contained in a single deployment unit, serving the Blazor frontend via REST API.
+              </ul>
+          <li>
+              <strong>Presentation Layer:</strong> 
+              <ul>
+                Blazor framework used for developing the rich, interactive UI, providing tools for logging geo-activities and visualizing historical data.
+              </ul>
+          <li>
+            <strong>Backend Framework:</strong> 
+            <ul>
+                .NET 6 utilized for the unified backend logic, managing all business rules and the complex multi-database connection layer.
+            </ul>
+
+            <li>
+                <strong>Data Persistence:</strong> 
+                <ul>
+                    Multi-Database Strategy (MySQL, MS SQL Server, PostgreSQL) implemented to potentially segregate data based on performance needs (e.g., PostgreSQL for spatial data).
+                </ul>
+
+            <li>
+                <strong>API Communication:</strong> 
+                <ul>
+                    REST APIs are exposed by the .NET 6 monolith to manage synchronous data transactions (logging new activities) and serving complex historical data queries to the Blazor frontend.
+                </ul>
+          </ul>
+
+          
+        </div>
+
+        <div class="detail-footer">
+          <a href="index.html#about" data-action="about" class="back-btn-small">
+            <ion-icon name="home-outline"></ion-icon>
+            <span>Back to Home</span>
+          </a>
+        </div>
+
+      </article>
+
+    </div>
+
+  </main>
+  
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

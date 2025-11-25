@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Reno Adrian" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Reno Adrian">Reno Adrian</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:renos.adrian@gmail.com" class="contact-link">renos.adrian@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+6285157979356" class="contact-link">+62 8515-7979-356</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Bekasi, Indonesia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/reno-satya-adrian/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/renosatyaadrian" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <div class="main-content">
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Software Engineer from Indonesia.
+            I thrive
+            on taking complex logic and technical challenge and translating them into simple, high performance, and maintainable.
+          </p>
+
+          <p>
+            With 4+ years of experience, I builds smarts solutions with clean code! I create reliable, user-friendly solutions that solve real problems. I focus on building efficient systems that are easy to use, ensuring hig-quality results that benefit both user and businesses.
+          
+          </p>
+        </section>
+
+
+        <section class="tech stack" style="margin-bottom: 60px;">
+
+          <h3 class="h3 clients-title">Tech Stack</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Net logo.png" alt="tech stack logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Csharp logo.png" alt="tech stack logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Java Logo.png" alt="tech stack logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Kafka logo.png" alt="tech stack logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Blazor logo.png" alt="tech stack logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Azure open AI logo.png" alt="tech stack logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Rest API logo.png" alt="tech stack logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Graphql Logo.png" alt="tech stack logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Microservice logo.png" alt="tech stack logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/pertamina logo.png" alt="clients logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Astra logo.png" alt="clients logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/agit logo.png" alt="clients logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/paykita logo.png" alt="clients logo">
+              </a>
+            </li>
+
+            
+          </ul>
+
+        </section>
+
+      </article> 
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Eszterházy Károly University</h4>
+
+              <span>2019</span>
+
+              <p class="timeline-text">
+                Student exchange program, focusing on Machine Learning curriculum.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universitas Pembangunan Nasional Veteran Yogyakarta</h4>
+
+              <span>2015 — 2021</span>
+
+              <p class="timeline-text">
+                Informatics Engineering
+              </p>
+
+            </li>
+
+            
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">.NET Developer | AGIT </h4>
+
+              <span>2025 — Present</span>
+
+              <p class="timeline-text">
+                Promoted to Full Stack Engineer (.NET & Next.js)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Back End Developer | AGIT</h4>
+
+              <span>2021 — 2025</span>
+
+              <p class="timeline-text">
+                Driving full-stack development using .NET Microservices and GraphQL integration. Manage data flow with Kafka and ensure efficient collaboration via Gitflow. Support Finance operations by automating processes (Scheduler Services) and generating reports (Stimulsoft Designer)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Development Engineer | Paykita</h4>
+
+              <span>2021</span>
+
+              <p class="timeline-text">
+                Developing high-performance backend solutions using Java Spring Boot/Microservices. Key responsibilities include implementing REST APIs, leveraging Kafka for scalable data communication, and maintaining collaboration via Gitflow. Manage critical financial tasks (including 3rd party banking systems) and internal company reporting projects.
+              </p>
+
+            </li>
+
+          </ol>
+
+          </section>
+
+      </article>
+
+      <!-- #project 1 -->  
+
+      <article class="blog" data-page="projects">
+        
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+      
+        <section class="blog-posts">
+      
+          <ul class="blog-posts-list">
+      
+            <li class="blog-post-item">
+              
+              <a href="./portfolio-1.html">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Project 1.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+              </a>
+      
+            
+              <div class="blog-content">
+      
+                <a href="./portfolio-1.html">
+                  <h3 class="h3 blog-item-title">ERP Astra Honda Motor</h3>
+                </a>
+      
+                <p class="blog-text">
+                  Engineered a scalable Event-Driven Microservices ERP system supporting 100,000+ users and 500+ dealers.
+                </p>
+      
+                <div class="blog-tags">
+                  <span class="blog-tag-item">.Net8</span>
+                  <span class="blog-tag-item">Microservices</span>
+                  <span class="blog-tag-item">Azure Open AI</span>
+                </div>
+      
+                <div class="blog-icon-actions">
+                  
+      
+                  <a href="./portfolio-1.html" class="action-btn" title="Read Case Study">
+                    <ion-icon name="book-outline"></ion-icon>
+                  </a>
+      
+                </div>
+      
+              </div>
+            </li>
+      
+        <!-- #project 2 -->    
+            <li class="blog-post-item">
+              <a href="./portfolio-2.html">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project 2.png" alt="Best fonts" loading="lazy">
+                </figure>
+              </a>
+
+              <div class="blog-content">
+                <a href="./portfolio-2.html">
+                  <h3 class="h3 blog-item-title">HRIS Astra Graphia Information Technology</h3>
+                </a>
+      
+                <p class="blog-text">
+                  .NET Microservices backend for HR; implemented Azure OpenAI for AI-powered CV matching.
+                </p>
+      
+                <div class="blog-tags">
+                  <span class="blog-tag-item">.NET 6</span>
+                  <span class="blog-tag-item">Microservices</span>
+                  <span class="blog-tag-item">Azure OpenAI</span>
+                </div>
+      
+                <div class="blog-icon-actions">
+            
+                  </a>
+                  <a href="./portfolio-2.html" class="action-btn">
+                    <ion-icon name="book-outline"></ion-icon>
+                  </a>
+                </div>
+      
+              </div>
+            </li>
+
+      <!-- #project 3 -->
+            <li class="blog-post-item">
+              <a href="./portfolio-3.html">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project 3.png" alt="Best fonts" loading="lazy">
+                </figure>
+              </a>
+      
+              <div class="blog-content">
+                <a href="./portfolio-3.html">
+                  <h3 class="h3 blog-item-title">Man Power Planning</h3>
+                </a>
+      
+                <p class="blog-text">
+                  Full-stack migration of Man Power Planning, modernizing the system and boosting performance.
+                </p>
+      
+                <div class="blog-tags">
+                  <span class="blog-tag-item">.NET 8</span>
+                  <span class="blog-tag-item">Monolithic</span>
+                  <span class="blog-tag-item">Blazor</span>
+                </div>
+      
+      
+                <div class="blog-icon-actions">
+                  
+                  <a href="./portfolio-3.html" class="action-btn">
+                    <ion-icon name="book-outline"></ion-icon>
+                  </a>
+                </div>
+      
+              </div>
+            </li>
+
+<!-- #project 4 -->
+            <li class="blog-post-item">
+              <a href="./portfolio-4.html">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project 4.png" alt="Best fonts" loading="lazy">
+                </figure>
+              </a>
+      
+              <div class="blog-content">
+                <a href="./portfolio-4.html">
+                  <h3 class="h3 blog-item-title">Escrow Payment System</h3>
+                </a>
+      
+                <p class="blog-text">
+                  Developed a high-availability escrow payment system, ensuring secure bank/PG integration.
+                </p>
+
+                <div class="blog-tags">
+                  <span class="blog-tag-item">Java Springboot</span>
+                  <span class="blog-tag-item">Microservices</span>
+                  <span class="blog-tag-item">Kafka</span>
+                </div>
+      
+                <div class="blog-icon-actions">
+                  
+                  <a href="./portfolio-4.html" class="action-btn">
+                    <ion-icon name="book-outline"></ion-icon>
+                  </a>
+                </div>
+      
+              </div>
+            </li>
+
+        <!-- #project 5 -->  
+            <li class="blog-post-item">
+              <a href="./portfolio-5.html">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project 5.png" alt="Best fonts" loading="lazy">
+                </figure>
+              </a>
+      
+              <div class="blog-content">
+                <a href="./portfolio-5.html">
+                  <h3 class="h3 blog-item-title">Geo Data Portal</h3>
+                </a>
+      
+                <p class="blog-text">
+                  Developed a Geo Data Portal to track high-volume time-series geo-data (lat/long).
+                </p>
+      
+                <div class="blog-tags">
+                  <span class="blog-tag-item">.NET 6</span>
+                  <span class="blog-tag-item">Monolithic</span>
+                  <span class="blog-tag-item">REST API</span>
+                </div>
+      
+
+                <div class="blog-icon-actions">
+                  <a href="https://github.com/renosatyaadrian/GeoDataPortal" target="_blank" class="action-btn">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <a href="./portfolio-5.html" class="action-btn">
+                    <ion-icon name="book-outline"></ion-icon>
+                  </a>
+                </div>
+      
+              </div>
+            </li>
+          
+        <!-- #project 6 -->    
+            <li class="blog-post-item">
+              <a href="./portfolio-6.html">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/project 6.png" alt="Best fonts" loading="lazy">
+                </figure>
+              </a>
+      
+              <div class="blog-content">
+                <a href="./portfolio-6.html">
+                  <h3 class="h3 blog-item-title">Vehicle Counting and Classification at Crossroads Using YOLOv3
+                  </h3>
+                </a>
+      
+                <p class="blog-text">
+                  vehicle counting/classification system for crossroads.
+                </p>
+      
+                <div class="blog-tags">
+                  <span class="blog-tag-item">Python</span>
+                  <span class="blog-tag-item">YOLOv3</span>
+                  <span class="blog-tag-item">Deep Learning</span>
+                </div>
+      
+                <div class="blog-icon-actions">
+                  <a href="https://github.com/renosatyaadrian/Counting-Vehicle-YOLOv3" target="_blank" class="action-btn">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <a href="./portfolio-6.html" class="action-btn">
+                    <ion-icon name="book-outline"></ion-icon>
+                  </a>
+                </div>
+      
+              </div>
+            </li>    
+            </ul>
+      
+        </section>
+      
+      </article>
+
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54575.76342963453!2d106.99205566778745!3d-6.228774792567822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c6900964f69%3A0xd00495351896398!2sBekasi%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1764041438824!5m2!1sen!2sid"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://getform.io/f/bqoegejb" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
